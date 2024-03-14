@@ -6,6 +6,7 @@
 }
 
 .container {
+  display: flex;
   flex-wrap: wrap;
   border:1px solid black;
   width: 500px;
@@ -13,8 +14,8 @@
 }
 
 .pad {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 50%;
 }
 
 .pad-0 {

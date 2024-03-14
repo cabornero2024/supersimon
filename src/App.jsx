@@ -2,7 +2,10 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [colors, setcolor] = useState(['#2f83dc', '#d7dc2f', '#49dc2f', '#dc342f']); 
+  const [colors, setcolor] = useState(['#2f83dc', '#d7dc2f', '#49dc2f', '#dc342f']);
+  const handleClick = (index) => {
+    console.log(index);
+  }
   return (
     <>
     <div className=''> 
@@ -12,7 +15,14 @@ function App() {
     {
       colors.map((color, index) =>
       {
-        return <div key={index} className={`pad pad-${index}`} style={{backgroundColor:`${color}`}}></div>
+        return <div 
+        key={index} 
+        className={`pad pad-${index}`} 
+        style={{backgroundColor:`${color}`}}
+        onClick={()=>handleClick(index)}
+        >
+
+        </div>
       })
     }
     </div>
@@ -27,8 +37,8 @@ function App() {
 export default App
 
    
-   /*1.-Interfaz de carton*/
-   /*2.-Detectar click en los componentes*/
+   /*1.-Interfaz de carton SOLVED*/
+   /*2.-Detectar click en los componentes SOLVED*/
    /*3.-Crear Array para almacenar la secuencia del juego
    /*4.-Crear el color random para añadirlo a la secuencia
    /*5.-Reproducir la secuencia - HARD
