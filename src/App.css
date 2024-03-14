@@ -1,0 +1,35 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  flex-wrap: wrap;
+  border:1px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.pad {
+  width: 100px;
+  height: 100px;
+}
+
+.pad-0 {
+border-top-left-radius: 250px;
+}
+
+
+.pad-1 {
+border-top-right-radius: 250px;
+}
+
+.pad-2 {
+border-bottom-left-radius: 250px;
+}
+
+.pad-3 {
+border-bottom-right-radius: 250px;
+}
